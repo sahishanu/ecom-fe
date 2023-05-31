@@ -8,6 +8,13 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/static/Inter-Regular.ttf') format('truetype'); /* Adjust the path and format based on your font file */
+  /* Add more src declarations for different font file formats if necessary */
+  /* Include additional font-face properties as needed (e.g., font-weight, font-style) */
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -15,13 +22,17 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+.slick-dots{
+  bottom:14px !important;
+}
 body {
-  color: rgb(var(--foreground-rgb));
+  background-color: aliceblue;
+  font-family: 'Inter';
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }

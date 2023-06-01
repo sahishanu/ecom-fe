@@ -16,7 +16,7 @@ export const Footer=()=>{
                <div>E-mail: support@fabcloths.co.in</div>
             </div>
             <div>
-                <div className="uppercase">Follow us</div>
+                <div className="uppercase">Follow us on</div>
                 <div className="flex mt-3 justify-between items-center">
                     <BsFacebook className="mr-1"/>
                     <BsInstagram className="mx-1"/>

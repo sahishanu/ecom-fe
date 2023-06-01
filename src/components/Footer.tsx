@@ -2,7 +2,7 @@ import Link from "next/link"
 import { BsFacebook, BsInstagram, BsLinkedin, BsTwitter, BsYoutube } from "react-icons/bs"
 export const Footer=()=>{
     return (
-        <div className=" font-thin flex  justify-between mt-10 p-4 text-[#F9FBFC] bg-[#171828]">
+        <div className=" font-thin flex text-sm justify-between mt-10 p-4 text-[#F9FBFC] bg-[#171828]">
             <div>
                 <div><Link href={"/"}> Contact Us</Link></div>
                 <div><Link href={"/"}> FAQ</Link></div>

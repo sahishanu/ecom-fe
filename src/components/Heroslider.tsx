@@ -14,6 +14,7 @@ interface SliderSettings {
     slidesToScroll: number;
     autoplay: boolean;
     autoplaySpeed: number;
+    arrows: boolean;
   }
   
 export const Heroslider: React.FC = () => {
@@ -27,6 +28,7 @@ export const Heroslider: React.FC = () => {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 4000,
+      arrows : false,
     };
   
     return (

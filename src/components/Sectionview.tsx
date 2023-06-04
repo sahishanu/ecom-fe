@@ -87,7 +87,7 @@ export const ExploreProducts=()=>{
     </div>
     </div>
         <div className=" flex justify-center mt-4">
-            <Viewmore text={"View all products"}/>
+            <Viewmore text={"View all products"} path="productlisting"/>
         </div>
     
     </div>

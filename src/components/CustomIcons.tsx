@@ -1,6 +1,8 @@
 import { HiOutlineBell, HiOutlineShoppingBag } from "react-icons/hi"
 import React from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
+import Link from "next/link";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
 interface CartIconProps {
     cartCount: number;
   }
@@ -50,3 +52,12 @@ export const ProfileIcon =()=>{
         </div>
     );
 };
+
+
+export const Movetop=()=>{
+    return(
+        <div className="fixed bottom-4  bg-white rounded-full right-4">
+            <Link href={"#"}><BsFillArrowUpCircleFill size={30}/></Link>
+            </div>
+    )
+}

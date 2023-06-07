@@ -3,6 +3,7 @@ import Image from "next/image"
 import { Sectionheader } from "./Sectionheader"
 import { Product, ProductSmall } from "./Proctuctview"
 import { Viewmore } from "./Viewmore"
+import React from "react"
 
 
 export const StoreunderSection=()=>{
@@ -57,37 +58,41 @@ return (
 )
 }
 
-export const ExploreProducts=()=>{
+interface ExploreProductsProps{
+    title:string;
+    subtitle?:string;
+}
+export const ExploreProducts:React.FC<ExploreProductsProps>=({title,subtitle})=>{
     return(<div>
-<Sectionheader title={"Explore Products"} subtitle={" Be the first to wear the newest trend"} />
+<Sectionheader title={title} subtitle={subtitle} />
 <div className="grid grid-cols-4 gap-4  mt-10 w-[85%] mx-auto">
     <div className="   ">
-    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"}/>  
+    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"} path={"/productdetails"}/>  
     </div>
     <div className=" ">
-    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"}/>  
+    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"} path={""}/>  
     </div>
     <div className=" ">
-    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"}/>  
+    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"} path={""}/>  
     </div>
     <div className="   ">
-    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"}/>  
+    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"} path={""}/>  
     </div>
     <div className=" ">
-    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"}/>  
+    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"} path={""}/>  
     </div>
     <div className=" ">
-    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"}/>  
+    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"} path={""}/>  
     </div>
     <div className="   ">
-    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"}/>  
+    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"} path={""}/>  
     </div>
     <div className=" ">
-    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"}/>  
+    <Product name={"xyz"} cost={0} imgUrl={"./images/productsm/shirt.jpg"} path={""}/>  
     </div>
     </div>
         <div className=" flex justify-center mt-4">
-            <Viewmore text={"View all products"} path="productlisting"/>
+            <Viewmore text={"View all products"} path="productlisting" title={"Explore product"}/>
         </div>
     
     </div>

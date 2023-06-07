@@ -6,7 +6,7 @@ interface Sectionheaderprop{
 
 export const Sectionheader:React.FC<Sectionheaderprop>=({title,subtitle})=>{
     return(
-        <div className="mt-10 w-[100%] text-center ">
+        <div className="mt-5 w-[100%] text-center ">
             <div className="font-medium text-xl text-[#111111e1]">
                 {title}
             </div>

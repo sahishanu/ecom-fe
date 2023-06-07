@@ -17,7 +17,7 @@ export default function Home() {
       <Heroslider/>
       <StoreunderSection/>
       <ExploreCatagorie/>
-      <ExploreProducts/>
+      <ExploreProducts title={'Explore Products'}/>
       <Footer/>
      
     </main>  )

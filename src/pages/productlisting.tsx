@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import React from "react"
 import {} from "react-icons"
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
-
+import{ProductList,ProductModel} from "../models/product";
 interface Props{
     title:string;
     subtitle?:string;
@@ -22,7 +22,7 @@ const productlisting:React.FC<{}>=()=>{
     return (
         <div>
             <Navbar/>
-            <span className="uppercase text-xs px-3  "><Link className="text-blue-700" href={"/"}>home</Link>&gt; Explore Products</span>
+            <span className="uppercase text-xs px-3  "><Link className="text-blue-700" href={"/"}>home</Link>&gt; {title}</span>
             
             <Sectionheader  title={title}/>
             <div>

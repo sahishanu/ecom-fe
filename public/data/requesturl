@@ -1,0 +1,4 @@
+productlist: https://my.api.mockaroo.com/productlist.json?key=841bec50
+categories: https://my.api.mockaroo.com/catogries.json?key=841bec50
+all product of catatgory: https://dummyjson.com/products/category/category_name
+get a product: https://dummyjson.com/products/product_id

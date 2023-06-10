@@ -46,7 +46,7 @@ export const ProfileIcon =()=>{
     return(
         <div className="  ml-2 flex justify-between items-center">
           
-          <img className="mt-2 h-8 w-8 rounded-full" src="./images/profile.jpg" alt="" />
+          <img className="mt-2 h-8 w-8 rounded-full" src="/images/profile.jpg" alt="" />
           
           <div className="ml-2 mt-3"><IoMdArrowDropdown size={25}/></div>
         </div>

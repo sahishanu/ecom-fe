@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import{ FcLikePlaceholder } from 'react-icons/fc'
@@ -31,13 +32,14 @@ interface ProductProp{
 export const Product:React.FC<ProductProp>=({name,cost,imgUrl,path})=>{
 return (
     
-         <div className=" m-4 w-[85%] mx-auto hover:scale-110 transition-transform duration-300 ">
-            <Link href={path}>
+         <div className=" mt-4 w-[90%] h-full mx-auto hover:scale-110 transition-transform duration-300 ">
+            <Link href="/product/[productId]" as={path}>
             <div className=" relative">
                 <div className=" absolute text-black top-[2%] left-[87%]">
                     <FcLikePlaceholder/>
                 </div>
-                <img className=" w-[100%]  " src={imgUrl} alt="" />
+               
+                <Image src={imgUrl} alt={""} width={100} height={100} className=" w-full h-[30vh]"/>
             
             <div className="  text-xs text-center pt-2  bg-white ">
             <div className=" text-xs text-center pt-2  bg-white font-semibold uppercase">

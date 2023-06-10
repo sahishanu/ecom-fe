@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai"
+import { ProductList,  } from "../models/product"
 interface ViewmoreProps{
     text:string;
     path?:string;
@@ -18,8 +19,8 @@ export const Viewmore:React.FC<ViewmoreProps>=({text,path,title})=>{
 const pathUrl:string="/"+path;
 const propsToSend= {
     title: title,
+    
   };
-  console.log(propsToSend);
 return (
 
     <div>

@@ -3,6 +3,7 @@ import React from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Link from "next/link";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { useRouter } from "next/router";
 interface CartIconProps {
     cartCount: number;
   }
@@ -61,3 +62,21 @@ export const Movetop=()=>{
             </div>
     )
 }
+
+export const BackButton = () => {
+    const router = useRouter();
+  
+    const handleGoBack = () => {
+      router.back();
+    };
+  
+    return (
+      <button className=" capitalize text-sm text-[#6c51cf]" onClick={handleGoBack}>
+        &lt; Back
+      </button>
+    );
+  };
+
+  
+  
+  export default BackButton;

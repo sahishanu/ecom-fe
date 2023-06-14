@@ -15,7 +15,7 @@ interface Props{
     subtitle?:string;
 }
 
-const productlisting:React.FC<{}>=()=>{
+const Productlisting:React.FC<{}>=()=>{
 
     const router =useRouter();
     const title =router.query.title as string;
@@ -24,7 +24,7 @@ const productlisting:React.FC<{}>=()=>{
     const productsData:ProductModel[]= useContext(ContextData);
     useEffect(()=>{
         setdata(productsData);
-    })
+    },[productsData])
     return (
         <div>
             <Navbar/>
@@ -47,4 +47,4 @@ const productlisting:React.FC<{}>=()=>{
         </div>
     )
 }
-export default productlisting;
+export default Productlisting;

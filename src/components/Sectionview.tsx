@@ -73,8 +73,8 @@ export const ExploreProducts:React.FC<ExploreProductsProps>=({title,subtitle})=>
     useEffect(()=>{
         
         setData(productsData)
-        console.log("explore product..." +data)
-    });
+        
+    },[productsData]);
     return(<div className="">
 
         

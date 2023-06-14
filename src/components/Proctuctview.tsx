@@ -11,7 +11,7 @@ export const ProductSmall:React.FC<Productsmprops>=({url,name})=>{
     return (
         <div className="  hover:scale-110 transition-transform duration-300 ">
             <div className="">
-                <img className=" rounded-t-lg w-[11.59vw] h-[20vh]" src={url} alt="" />
+            <Image src={url} width={100} height={100} className="ounded-t-lg w-[11.59vw] h-[20vh]"   alt={""}/>
             </div>
             <div className=" text-xs text-center pt-2 rounded-b-lg bg-white font-semibold uppercase">
                     {name}

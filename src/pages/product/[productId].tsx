@@ -13,7 +13,7 @@ import { ExploreProducts } from "@/components/Sectionview";
 interface ProductDetailsProps{
     product:ProductModel | undefined;
 }
-const productdetails=()=>{
+const Productview=()=>{
     
     
     const [product,setProduct]= useState<ProductModel >({
@@ -42,8 +42,8 @@ const productdetails=()=>{
             const item = data.filter((product) => product.id === parseInt(productId));
             setProduct(item[0]);
           }
-          console.log(product);
-    })
+         
+    },[router.query, product,data])
 
 
 
@@ -60,4 +60,4 @@ const productdetails=()=>{
     )
 }
 
-export default productdetails;
+export default Productview;

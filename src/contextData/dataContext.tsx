@@ -44,7 +44,7 @@ export const DataProvider:React.FC<ChildProps>=({children})=>{
         };
     
         fetchData();
-      }, []);
+      });
 
     
     return(

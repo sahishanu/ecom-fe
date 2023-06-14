@@ -26,7 +26,7 @@ export const ProductDetails:React.FC<ProductDetailsProps>=({product})=>{
     useEffect(()=>{
         if(product!=undefined)
         setData(product);
-    })
+    },[product])
     
     const incQuentity= ()=>{
         setQuantity((prev)=>{
@@ -46,8 +46,8 @@ export const ProductDetails:React.FC<ProductDetailsProps>=({product})=>{
             {/* Image div */}
             <div className="grid grid-cols-2 gap-2">
                 {
-                   data?.images.map((imgurl)=>{
-                    return <div>
+                   data?.images.map((imgurl,index)=>{
+                    return <div key={index}>
                         <Image src={imgurl} alt={data.title} width={100} height={100} className="w-full h-[50vh]"/>
                     </div>
                    }) 

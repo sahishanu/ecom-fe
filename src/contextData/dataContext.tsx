@@ -35,12 +35,7 @@ export const DataProvider:React.FC<ChildProps>=({children})=>{
             thumbnail: product.thumbnail,
             images: product.images,
           }));
-          
-        
-
          setData(products);
-        console.log("context:" +data);  
-
         };
     
         fetchData();

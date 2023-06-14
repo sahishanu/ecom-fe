@@ -18,7 +18,7 @@ export const StoreunderSection=()=>{
                     <Link href={"/"} >
                     <Image 
                     className=''
-                    src="/../public/images/under599.png"
+                    src="/images/under599.png"
                     width={900}
                     height={150}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -30,7 +30,7 @@ export const StoreunderSection=()=>{
                     <Link href={"/"} >
                     <Image 
                     className=''
-                    src="/../public/images/under599.png"
+                    src="/images/under599.png"
                     width={900}
                     height={150}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

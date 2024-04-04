@@ -14,7 +14,7 @@ interface Props{
     subtitle?:string;
 }
 
-const productlisting:React.FC<{}>=()=>{
+const Productlisting:React.FC<{}>=()=>{
 
     const router =useRouter();
     const title =router.query.title as string;

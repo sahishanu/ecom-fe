@@ -41,7 +41,7 @@ export const Heroslider: React.FC = () => {
         
         <Image
         className='w-[100%] h-[50.5vh]'
-      src="/../public/images/banner1.jpg"
+      src="/images/banner1.jpg"
       width={900}
       height={150}
       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -51,7 +51,7 @@ export const Heroslider: React.FC = () => {
         <div className='h-[50.5vh] bg-slate-300'>
         <Image
         className='w-[100%] h-[50.5vh]'
-      src="/../public/images/banner2.jpg"
+      src="/images/banner2.jpg"
       width={900}
       height={150}
       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -61,7 +61,7 @@ export const Heroslider: React.FC = () => {
         <div className='h-[50.5vh] bg-slate-300'>
         <Image
         className='w-[100%] h-[50.5vh]'
-      src="/../public/images/banner3.jpg"
+      src="/images/banner3.jpg"
       width={900}
       height={150}
       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

@@ -3,6 +3,8 @@ import React from "react";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Link from "next/link";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { useRouter } from "next/router";
+import Image from "next/image";
 interface CartIconProps {
     cartCount: number;
   }
@@ -45,9 +47,7 @@ NotificationIcon.defaultProps={
 export const ProfileIcon =()=>{
     return(
         <div className="  ml-2 flex justify-between items-center">
-          
-          <img className="mt-2 h-8 w-8 rounded-full" src="./images/profile.jpg" alt="" />
-          
+          <Image src={"/images/profile.jpg"} className="mt-2 h-8 w-8 rounded-full" width={100} height={100} alt={""}/>  
           <div className="ml-2 mt-3"><IoMdArrowDropdown size={25}/></div>
         </div>
     );
@@ -61,3 +61,21 @@ export const Movetop=()=>{
             </div>
     )
 }
+
+export const BackButton = () => {
+    const router = useRouter();
+  
+    const handleGoBack = () => {
+      router.back();
+    };
+  
+    return (
+      <button className=" capitalize text-sm text-[#6c51cf]" onClick={handleGoBack}>
+        &lt; Back
+      </button>
+    );
+  };
+
+  
+  
+  export default BackButton;

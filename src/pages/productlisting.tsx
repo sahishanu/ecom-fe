@@ -47,4 +47,6 @@ const Productlisting:React.FC<{}>=()=>{
         </div>
     )
 }
+
 export default Productlisting;
+
